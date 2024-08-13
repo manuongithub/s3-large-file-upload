@@ -9,7 +9,13 @@
   <h1>Upload a Large Video File</h1>
   <input type="file" id="fileInput" accept="video/*">
   <button id="uploadButton">Upload</button>
-  <div id="progress"></div>
+  
+  <!-- Progress Bar -->
+  <progress id="uploadProgress" value="0" max="100" style="width: 100%;"></progress>
+  <div id="progressText"></div>
+  
+  <!-- Error Messages -->
+  <div id="errorMessages" style="color: red;"></div>
   
   <h2>MP4 Files in Bucket</h2>
   <ul id="fileList"></ul>
