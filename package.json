@@ -1,4 +1,12 @@
 {
+  "name": "multipart-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
   "dependencies": {
     "aws-sdk": "^2.1666.0",
     "axios": "^1.7.3",
@@ -7,14 +15,14 @@
     "express": "^4.19.2",
     "http-server": "^14.1.1"
   },
-  "scripts": {
-    "start": "node server.js"
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   },
-  "name": "multipart-upload",
-  "version": "1.0.0",
-  "main": "server.js",
+  "jest": {
+    "testEnvironment": "jest-environment-jsdom"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "ISC"
 }
